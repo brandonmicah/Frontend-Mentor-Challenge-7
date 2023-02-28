@@ -1,0 +1,341 @@
+:root {
+
+    /* ### Primary */
+
+    --primary-gradient: linear-gradient(hsl(6, 100%, 80%), hsl(335, 100%, 65%));
+
+    /* ### Neutral */
+
+    --pale-blue: hsl(243, 100%, 93%);
+    --grayish-blue: hsl(229, 7%, 55%);
+    --dark-blue: hsl(228, 56%, 26%);
+    --very-dark-blue: hsl(229, 57%, 11%);
+
+
+    --ff: 'Raleway', sans-serif;
+
+    --fw-400: 400;
+    --fw-700: 700;
+
+}
+
+/* Default resets */
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role='list'],
+ol[role='list'] {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center;
+    position: absolute; 
+    bottom: 5px;
+}
+
+.attribution a {
+    color: white; 
+}
+
+body {
+    font-size: 14px;
+    font-family: var(--ff);
+    height: 100vh;
+    color: rgba(219, 217, 255, 1);
+}
+
+.background {
+    background-color: var(--very-dark-blue);
+    background-size: cover;
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.card {
+    background-image: url(images/bg-mobile.png);
+    max-width: 375px;
+    width: 375px;
+    height: 667px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    row-gap: 1.1rem;
+}
+
+
+.col-1, .col-2 {
+    width: 86%;
+    height: 30%;
+}
+
+.col-1 {
+    background-color: var(--dark-blue);
+    border-radius: 10px 100px 10px 10px;
+    padding: 2.8rem;
+
+}
+
+.logo {
+    width: 58%;
+    display: block;
+}
+
+.svg-bg {
+    background-color: var(--very-dark-blue);
+    height: 48px;
+    width: 48px;
+    display: inline-block;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+}
+
+.icons {
+    display: flex;
+    column-gap: 16px;
+    padding-top: 33px;
+}
+
+.col-2 {
+    position: relative;
+
+}
+
+.col-2-top {
+    height: 80%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--dark-blue);
+    border-radius: 10px;
+    padding-bottom: 43px;
+}
+
+.bold {
+    font-weight: var(--fw-700);
+}
+
+.range {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+}
+
+/*  2D CONSTRUCTION OF INPUT TYPE RANGE */
+
+.slider-bg {
+    width: 80%;
+    height: 20px;
+    background-color: var(--very-dark-blue);
+    border-radius: 20px;
+    padding: 3px;
+    margin: 19px 0 10px 0;
+}
+
+.track {
+    width: 75%;
+    height: 14px;
+    background-image: var(--primary-gradient);
+    border-radius: 20px;
+    padding: 1.5px;
+}
+
+.thumb {
+    height: 10px;
+    width: 10px;
+    background-color: white;
+    border-radius: 50%;
+    margin-left: auto;
+}
+
+.storage {
+    padding-top: 30px;
+}
+
+.remaining-gb {
+    margin: 0;
+    position: absolute;
+    bottom: 0;
+    height: 72px;
+    background-color: white;
+    color: black;
+    display: flex;
+    align-items: center;
+    padding: 16px 24px;
+    border-radius: .7rem;
+}
+
+.remaining-gb span:nth-child(1) {
+    font-size: 40px;
+    margin-right: .5rem;
+    font-family: var(--ff);
+}
+
+.remaining-gb span:nth-child(2) {
+    color: var(--grayish-blue);
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: var(--fw-700);
+}
+
+.smaller-font {
+    font-size: 12px;
+}
+
+.width {
+    width: 100%;
+}
+
+.triangle {
+    display: none;
+}
+
+
+@media screen and (min-width: 1440px) {
+
+.card {
+    max-width: 920px;
+    width: 63%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    background-image: none;
+    flex-direction: row;
+    
+}
+
+.background {
+    background-color: var(--very-dark-blue);
+    background-size: cover;
+    min-height: 100vh;
+}
+
+.flex {
+    background-image: url(images/bg-desktop.png);
+    background-size: 100% 50%;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    min-width: 100vw;
+    min-height: 100vh;
+}
+
+    
+.col-1 {
+    width: 350px;
+    height: 201px
+}
+
+.col-2 {
+    height: 201px;
+    width: 540px;
+    max-width: 540px;
+    position: relative;
+}
+
+.col-2-top {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-end;
+    padding: 40px;
+    background-color: var(--dark-blue);
+    border-radius: 10px;
+    position: absolute;
+    bottom: 0;
+    height: 80%;
+    width: 100%;
+}
+
+
+.remaining-gb {
+    margin: 0;
+    position: absolute;
+    top: 0;
+    right: 40px;
+    height: 72px;
+    background-color: white;
+    color: black;
+    display: flex;
+    align-items: center;
+    padding: 16px 24px;
+    border-radius: .7rem .7rem 0 .7rem;
+}
+
+.triangle {
+    display: inline;
+    height: 22px;
+    width: 22px;
+    position: absolute;
+    width: 0;
+    border-top: 22px solid white;
+    border-left: 22px solid transparent;
+    right: 40px;
+    top: 71px;
+}
+    
+}
+
+
