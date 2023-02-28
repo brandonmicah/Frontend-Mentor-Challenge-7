@@ -253,36 +253,36 @@ body {
 }
 
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1440px) {
 
-    .card {
-        max-width: 920px;
-        width: 63%;
-        height: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: 2rem;
-        background-image: none;
-        flex-direction: row;
-        
-    }
-
-    .background {
-        background-color: var(--very-dark-blue);
-        background-size: cover;
-        min-height: 100vh;
-    }
-
-    .flex {
-        background-image: url(images/bg-desktop.png);
-        background-size: 100% 50%;
-        background-repeat: no-repeat;
-        background-position: bottom;
-        min-width: 100vw;
-        min-height: 100vh;
-    }
+.card {
+    max-width: 920px;
+    width: 63%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    background-image: none;
+    flex-direction: row;
     
+}
+
+.background {
+    background-color: var(--very-dark-blue);
+    background-size: cover;
+    min-height: 100vh;
+}
+
+.flex {
+    background-image: url(images/bg-desktop.png);
+    background-size: 100% 50%;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    min-width: 100vw;
+    min-height: 100vh;
+}
+
     
 .col-1 {
     width: 350px;
